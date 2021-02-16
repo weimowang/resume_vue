@@ -1,0 +1,26 @@
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+  }
+  .left_wrap {
+    width: 25%;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    background: #575757;
+  }
+  .right_wrap {
+    width: 75%;
+    overflow: auto;
+    position: absolute;
+    right: 0;
+  }
+
+  .c_wrap{
+      min-height: 90vh;
+  }

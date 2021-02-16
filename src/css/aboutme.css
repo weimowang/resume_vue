@@ -1,0 +1,41 @@
+.Aboutme {
+    display: flex;
+}
+
+.wrap_left {
+    min-width: 50%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.img_me {
+    background-image: url("../assets/me2.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease;
+}
+
+.img_me:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+}
+
+.wrap_right {
+    text-align: justify;
+    width: 50%;
+    padding: 20vh 40px 20px 40px;
+}
+
+.about-header h1 {
+    letter-spacing: 30px;
+}
+
+.about-header p {
+    color: #4e7a7c;
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}

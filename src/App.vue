@@ -1,28 +1,34 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header class="left_wrap"></Header>
+    <div class="container right_wrap">
+      <Aboutme class="c_wrap"></Aboutme>
+      <Skillpage class="c_wrap"></Skillpage>
+      <Career class="c_wrap"></Career>
+      <Projectpage class="c_wrap"></Projectpage>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from "./views/common/Header.vue";
+import Aboutme from "./views/Aboutme.vue";
+import Career from "./views/Career.vue";
+import Projectpage from "./views/Projectpage.vue";
+import Skillpage from "./views/Skillpage.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Header,
+    Aboutme,
+    Career,
+    Projectpage,
+    Skillpage,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import "./css/main.css";
 </style>
