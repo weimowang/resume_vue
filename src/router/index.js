@@ -18,6 +18,7 @@ export default new VueRouter({
                 selector: to.hash, behavior: 'smooth',
             }
         } else {
+            console.log('hi')
             return { x: 0, y: 0 }
         }
     },

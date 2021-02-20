@@ -3,8 +3,8 @@
     <Header class="left_wrap"></Header>
     <div class="container right_wrap">
       <Aboutme class="c_wrap"></Aboutme>
-      <Skillpage class="c_wrap"></Skillpage>
       <Career class="c_wrap"></Career>
+      <Skillpage class="c_wrap"></Skillpage>
       <Projectpage class="c_wrap"></Projectpage>
     </div>
   </div>

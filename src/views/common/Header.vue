@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="contentwrap">
-      <div class="wei-img"></div>
+      <div class="wei_img"></div>
 
-      <div class="wei-content">
+      <div class="wei_content">
         <div class="c-name">王維摩</div>
         <div class="e-name">Wei Mo Wang</div>
       </div>
@@ -64,15 +64,15 @@ export default {
         },
         {
           id: 1,
-          name: "Skillpage",
-          anchor: "#Skillpage",
-          txt: "技術能力",
-        },
-        {
-          id: 2,
           name: "Career",
           anchor: "#Career",
           txt: "職涯經歷",
+        },
+        {
+          id: 2,
+          name: "Skillpage",
+          anchor: "#Skillpage",
+          txt: "技術能力",
         },
         {
           id: 3,
@@ -80,6 +80,11 @@ export default {
           anchor: "#Projectpage",
           txt: "作品",
         },
+      ],
+      icon_datas: [
+        { name: "", link: "" },
+        { name: "", link: "" },
+        { name: "", link: "" },
       ],
     };
   },

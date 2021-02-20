@@ -29,13 +29,14 @@
     padding: 20vh 40px 20px 40px;
 }
 
-.about-header h1 {
+.about_header h1 {
     letter-spacing: 30px;
 }
 
-.about-header p {
+.about_header p {
     color: #4e7a7c;
-    font-size: 14px;
+    font-size: 1em;
+    font-weight: 600;
     letter-spacing: 4px;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }

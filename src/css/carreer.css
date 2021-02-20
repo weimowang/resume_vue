@@ -1,0 +1,40 @@
+.works_wrap {
+    display: flex;
+    padding: .3em;
+}
+
+.work_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: .75em 3em;
+    text-align: left;
+    transition: .8s all;
+}
+
+.work_box:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 1.5px 1.5px 8px #ada8a8;
+}
+
+.line {
+    margin-top: 1em;
+    background-color: rgba(0, 0, 0, .125);
+    height: 1px;
+    width: 100%;
+}
+
+.work_box span {
+    font-size: .9em;
+}
+
+.date {
+    color: gray;
+    font-size: .8em!important;
+}
+
+.title {
+    font-size: 1.2em!important;
+    padding:4px 0;
+}
