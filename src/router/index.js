@@ -13,11 +13,14 @@ export default new VueRouter({
     mode: 'history',
     scrollBehavior: function (to) {
         if (to.hash) {
-            return {
-                selector: to.hash, behavior: 'smooth',
-            }
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve({
+                        selector: to.hash, behavior: 'smooth',
+                    })
+                }, 100)
+            })
         } else {
-            console.log('hi')
             return { x: 0, y: 0 }
         }
     },

@@ -11,8 +11,7 @@
         <li
           v-for="(item, key, index) in menuData"
           :key="index"
-          :class="[{ current_active: item.name == $route.name }]"
-          @click="toggle()"
+          :class="[{ current_active: item.name == currentli }]"
         >
           <router-link tag="a" :to="{ name: item.name, hash: item.anchor }">{{
             item.txt
@@ -86,13 +85,28 @@ export default {
         { name: "", link: "" },
         { name: "", link: "" },
       ],
+      currentli: "Aboutme",
     };
   },
   methods: {
-    //click yhe hambuger menu
-    toggle: function () {
-      return;
+    ScrollEvent() {
+      this.menuData.forEach((e) => {
+        let c_scrollY = window.scrollY;
+        if (c_scrollY >= document.querySelector(e.anchor).offsetTop - 20) {
+          this.currentli = e.name;
+        }
+      });
     },
+    scroll_to(offset, callback) {
+      console.log(offset, callback);
+    },
+  },
+  created() {
+    window.addEventListener("scroll", this.ScrollEvent);
+  },
+  mounted() {},
+  destroyed() {
+    window.removeEventListener("scroll", this.ScrollEvent);
   },
 };
 </script>

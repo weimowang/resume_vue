@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" >
     <Header class="left_wrap"></Header>
     <div class="container right_wrap">
       <Aboutme class="c_wrap"></Aboutme>
@@ -26,6 +26,9 @@ export default {
     Projectpage,
     Skillpage,
   },
+  methods:{
+
+  }
 };
 </script>
 

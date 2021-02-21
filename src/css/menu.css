@@ -4,7 +4,9 @@
     width: 100%;
     height: 100%;
 }
+
 .wei_img {
+    display: block;
     background-image: url('../assets/me2.jpg');
     background-size: cover;
     background-position: center center;
@@ -17,9 +19,9 @@
     margin-top: 60px;
     transition: .8s all;
 }
+
 .wei_img:hover {
     box-shadow: 0px 0px 18px #777;
-
 }
 
 .wei_content {
@@ -27,7 +29,11 @@
     width: 80%;
     text-align: left;
     margin: 1em auto;
-    color:white;
+    color: white;
+}
+
+.e-name {
+    display: block;
 }
 
 .menuUl {
@@ -50,4 +56,36 @@
 
 .menuUl li.current_active a {
     color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .contentwrap {
+        display: flex;
+        flex-direction: row;
+    }
+    .wei_img {
+        display: none;
+        background-image: none;
+    }
+    .wei_content {
+        display: flex;
+        flex-direction: row;
+        width: 20%;
+        color: white;
+        padding: 0 1em;
+        margin: 0 auto;
+        line-height: 10vh;
+    }
+    .e-name {
+        display: none;
+    }
+    .menuUl {
+        width: 100%;
+        text-align: right;
+    }
+    .menuUl li {
+        display: inline-block;
+        line-height: 10vh;
+        margin: 0 .6em;
+    }
 }
